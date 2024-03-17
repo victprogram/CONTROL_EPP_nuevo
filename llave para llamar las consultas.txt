@@ -1,0 +1,25 @@
+
+http://192.168.1.200/bprestservices/getWebCatalogPaginado.rsvc?incluircosto=si
+
+
+
+/bprestservices/getWebCatalogPaginado.rsvc?incluircosto=si
+
+
+GET /bprestservices/getwebcatalogpaginado.rsvc?pagina=1&rowsPorPagina=100 HTTP/1.1
+
+
+
+
+
+GET /bprestservices/empleado.rsvc?pagina=1&rowsPorPagina=100 HTTP/1.1
+
+
+
+http://navarrowindows.ddns.net/bprestservices/getwebcatalogpaginado.rsvc?incluircosto=si?pagina=1&rowsPorPagina=3000%20HTTP/1.1
+
+
+http://192.168.1.200/bprestservices/getwebcatalogpaginado.rsvc?incluircosto=si?pagina=1&rowsPorPagina=3000%20HTTP/1.1
+
+
+ http://navarrowindows.ddns.net/bprestservices/empleado.rsvc?pagina=1&rowsPorPagina=1000 HTTP/1.1

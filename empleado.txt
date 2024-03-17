@@ -1,0 +1,65 @@
+GET /bprestservices/empleado.rsvc?pagina=1&rowsPorPagina=100 HTTP/1.1
+
+Parametros
+pagina: indica el numero de pagina a retornar, si no lo envias por defecto es 1
+rowsPorPagina: indica el numero elementos a retornar por pagina, si no lo envias por defecto es 100
+
+{
+	"pagina": 1,
+	"paginas": 5,
+	"rows": [{
+			"afp_nombre": "SCOTIA CRECER AFP",
+			"apellidos": "CORONADO PRESIDENTE",
+			"ars_nombre": "ARS SDS",
+			"cargo_nombre": "PREVENCION",
+			"cedula": "04912394567",
+			"ciudad_nombre": "COTUI",
+			"codigo": 2,
+			"direccion": "COTUI",
+			"dpto_nombre": "PRINCIPAL",
+			"email": "",
+			"emergencia": "",
+			"entrada": "2016-03-28T06:00:00Z",
+			"estado_nombre": "SANHEZ RAMIREZ",
+			"extranjero": false,
+			"foto": "fotos/empleados/itemplaceholder.jpg",
+			"nacimiento": "2019-02-01T06:00:00Z",
+			"nombre": "CORONADO PRESIDENTE, LUIS LEONEL DANILO",
+			"nombres": "LUIS LEONEL DANILO",
+			"sexo": "",
+			"soltero": false,
+			"sucursal_nombre": "",
+			"tel1": "(849) 123-4657",
+			"tel2": "",
+			"tel3": "",
+			"tel4": "",
+			"tipo": 0
+		}, {
+			"afp_nombre": "SCOTIA CRECER AFP",
+			"apellidos": "TURPEN",
+			"ars_nombre": "ARS SDS",
+			"cargo_nombre": "SURP. TRAN",
+			"cedula": "04998765432",
+			"ciudad_nombre": "COTUI",
+			"codigo": 6,
+			"direccion": "COTUI",
+			"dpto_nombre": "PRINCIPAL",
+			"email": "",
+			"emergencia": "",
+			"entrada": "2012-06-18T06:00:00Z",
+			"estado_nombre": "SANCHEZ RAMIREZ",
+			"extranjero": false,
+			"foto": "fotos/empleados/itemplaceholder.jpg",
+			"nacimiento": "2019-02-01T06:00:00Z",
+			"nombre": "TURPEN, MAXIMO",
+			"nombres": "MAXIMO",
+			"sexo": "",
+			"soltero": false,
+			"sucursal_nombre": "",
+			"tel1": "829-234-5432",
+			"tel2": "",
+			"tel3": "",
+			"tel4": "",
+			"tipo": 0
+		}
+	}

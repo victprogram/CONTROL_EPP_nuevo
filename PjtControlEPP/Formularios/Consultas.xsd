@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Consultas" targetNamespace="http://tempuri.org/Consultas.xsd" xmlns:mstns="http://tempuri.org/Consultas.xsd" xmlns="http://tempuri.org/Consultas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CadenaConexion" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CadenaConexion (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PjtControlEPP.Properties.Settings.GlobalReference.Default.CadenaConexion" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ConsultaInventarioTableAdapter" GeneratorDataComponentClassName="ConsultaInventarioTableAdapter" Name="ConsultaInventario" UserDataComponentName="ConsultaInventarioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CadenaConexion (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        inventario.idproducto, inventario.nombreproducto, categoria.nombrecategoria, inventario.cantidad
+FROM            inventario INNER JOIN
+                         categoria ON inventario.idcategoria = categoria.idcategoria</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idproducto" DataSetColumn="idproducto" />
+              <Mapping SourceColumn="nombreproducto" DataSetColumn="nombreproducto" />
+              <Mapping SourceColumn="nombrecategoria" DataSetColumn="nombrecategoria" />
+              <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Consultas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Consultas" msprop:Generator_UserDSName="Consultas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ConsultaInventario" msprop:Generator_TableClassName="ConsultaInventarioDataTable" msprop:Generator_TableVarName="tableConsultaInventario" msprop:Generator_RowChangedName="ConsultaInventarioRowChanged" msprop:Generator_TablePropName="ConsultaInventario" msprop:Generator_RowDeletingName="ConsultaInventarioRowDeleting" msprop:Generator_RowChangingName="ConsultaInventarioRowChanging" msprop:Generator_RowEvHandlerName="ConsultaInventarioRowChangeEventHandler" msprop:Generator_RowDeletedName="ConsultaInventarioRowDeleted" msprop:Generator_RowClassName="ConsultaInventarioRow" msprop:Generator_UserTableName="ConsultaInventario" msprop:Generator_RowEvArgName="ConsultaInventarioRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idproducto" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidproducto" msprop:Generator_ColumnPropNameInRow="idproducto" msprop:Generator_ColumnPropNameInTable="idproductoColumn" msprop:Generator_UserColumnName="idproducto" type="xs:int" />
+              <xs:element name="nombreproducto" msprop:Generator_ColumnVarNameInTable="columnnombreproducto" msprop:Generator_ColumnPropNameInRow="nombreproducto" msprop:Generator_ColumnPropNameInTable="nombreproductoColumn" msprop:Generator_UserColumnName="nombreproducto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombrecategoria" msprop:Generator_ColumnVarNameInTable="columnnombrecategoria" msprop:Generator_ColumnPropNameInRow="nombrecategoria" msprop:Generator_ColumnPropNameInTable="nombrecategoriaColumn" msprop:Generator_UserColumnName="nombrecategoria" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ConsultaInventario" />
+      <xs:field xpath="mstns:idproducto" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PublishUrlHistory>H:\INSTALADORES\EPPIMPROHELLPAD\|G:\INSTALADORES\EPPIMPROMINA\|G:\INSTALADORES\EPPIMPRO\|H:\INSTALADORES\EPPIMPRO\|\\srv-navarro\h\VICTOR_ALFONSO_VARGAS\INSTALADORES\EPPIMPRO\</PublishUrlHistory>
+    <InstallUrlHistory>http://navarrowindows.ddns.net:80/EPPIMPROHELLPAD/|http://navarrowindows.ddns.net:80/EPPIMPROMINA/|http://navarrowindows.ddns.net:80/EPPINVPRO/|http://navarrowindows.ddns.net:80/EPPIMPRO/|http://navarrowindows.ddns.net:80/EPPIMPRO/EPP_IMPRO/</InstallUrlHistory>
+    <SupportUrlHistory>https://www.instagram.com/victorprogramacion/</SupportUrlHistory>
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory>https://www.instagram.com/victorprogramacion/</ErrorReportUrlHistory>
+    <FallbackCulture>es-ES</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>
